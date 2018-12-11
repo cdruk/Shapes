@@ -6,6 +6,7 @@ namespace Midterm
     {
         public double Radius { get; set; }
         private readonly double PI = 3.14159265;
+        public double perimeter() => 2 * PI * Radius;
         public double area() => PI * Radius * Radius;
         override public String ToString() => $"Circle of radius {this.Radius}";
     }

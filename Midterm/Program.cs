@@ -40,6 +40,10 @@ namespace Midterm
             Console.WriteLine($"Area of a square of side {square.Side} is {geometry.Area(square)}");
             Console.WriteLine($"Area of a rectangle {rectangle.Height} x {rectangle.Width} is {geometry.Area(rectangle)}");
             Console.WriteLine($"Area of a triangle of side {triangle.Side} is {geometry.Area(triangle)}");
+            Console.WriteLine($"Perimeter of a circle of radius {circle.Radius} is {geometry.Perimeter(circle)}");
+            Console.WriteLine($"Perimeter of a square of side {square.Side} is {geometry.Perimeter(square)}");
+            Console.WriteLine($"Perimeter of a rectangle {rectangle.Height} x {rectangle.Width} is {geometry.Perimeter(rectangle)}");
+            Console.WriteLine($"Perimeter of a triangle of side {triangle.Side} is {geometry.Perimeter(triangle)}");
         }
         private static void Version2()
         {
@@ -69,6 +73,10 @@ namespace Midterm
             Console.WriteLine($"Area of a square of side {square.Side} is {square.area()}");
             Console.WriteLine($"Area of a rectangle {rectangle.Height} x {rectangle.Width} is {rectangle.area()}");
             Console.WriteLine($"Area of a triangle of side {triangle.Side} is {triangle.area()}");
+            Console.WriteLine($"Perimeter of a circle of radius {circle.Radius} is {circle.perimeter()}");
+            Console.WriteLine($"Perimeter of a square of side {square.Side} is {square.perimeter()}");
+            Console.WriteLine($"Perimeter of a rectangle {rectangle.Height} x {rectangle.Width} is {rectangle.perimeter()}");
+            Console.WriteLine($"Perimeter of a triangle of side {triangle.Side} is {triangle.perimeter()}");
 
         }
     }
