@@ -7,20 +7,21 @@ namespace Midterm
         public readonly double Pi = 3.14159265;
         public double Area(Object shape)
         {
-            if (shape is Circle)
+            if (shape is Circle cir)
             {
-                Circle cir = (Circle)shape;
                 return Pi * cir.Radius * cir.Radius;
             }
-            else if (shape is Square)
+            else if (shape is Square squ)
             {
-                Square squ = (Square)shape;
                 return squ.Side * squ.Side;
             }
-            else if (shape is Rectangle)
+            else if (shape is Rectangle rec)
             {
-                Rectangle rec = (Rectangle)shape;
                 return rec.Height * rec.Width;
+            }
+            else if (shape is Triangle tri)
+            {
+                return Math.Sqrt(3) / 4 * Math.Pow(tri.Side, 2);
             }
             throw new Exception("No such shape");
         }
